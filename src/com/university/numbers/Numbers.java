@@ -1,4 +1,4 @@
-package com.university;
+package com.university.numbers;
 
 import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 

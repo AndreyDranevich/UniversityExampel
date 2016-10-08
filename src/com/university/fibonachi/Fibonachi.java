@@ -1,4 +1,4 @@
-package com.university;
+package com.university.fibonachi;
 
 //Лабораторная работа 3.
 //
