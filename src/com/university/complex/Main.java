@@ -5,17 +5,21 @@ package com.university.complex;
  */
 public class Main {
     public static void main(String[] args) {
-        Complex a = new Complex(2, 4);
+        Complex a = new Complex(2, 0);
         Complex b = new Complex(3, 2);
+
         a.printAlg();
         b.printAlg();
-        a.div(b);
+        System.out.println("a+b");
+        a.add(b);
         a.printAlg();
         a.printExp();
         a.printTrig();
 
-        Complex c = new Complex();
-        c = a.div(a,b);
+        Complex c;
+        System.out.println("a/b");
+        c = a.div(a, b);
         c.printAlg();
+
     }
 }

@@ -7,18 +7,16 @@ import java.math.*;
  */
 
 public class Complex {
-    private double real;
-    private double imaginaries;
     private final int FIVE = 5;
 
-    Complex() {
-        real = 0;
-        imaginaries = 1;
-    }
+    private double real;
+    private double imaginaries;
 
-    Complex(double one, double two) {
-        real = one;
-        imaginaries = two;
+    Complex() { }
+
+    Complex(double real, double imaginaries) {
+        this.real = real;
+        this.imaginaries = imaginaries;
     }
 
     public void printAlg() {
@@ -52,12 +50,14 @@ public class Complex {
     public void printTrig() {
         BigDecimal modul = round(getModul(), FIVE);
         BigDecimal fi = round(getFi(), FIVE);
+        System.out.println("Trig form:");
         System.out.println(modul + "(cos(" + fi + ") + i*sin(" + fi + "))");
     }
 
     public void printExp() {
         BigDecimal modul = round(getModul(), FIVE);
         BigDecimal fi = round(getFi(), FIVE);
+        System.out.println("Exp form:");
         System.out.println(modul + "*E^(i*" + fi + ")");
     }
 
